@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>poker</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	html{
+		height:100%;
+		background: url(img/bigbg.jpg) no-repeat center;
+	}
+	body{
+		height: 100%;
+		overflow: hidden;
+	}
+	.table{
+		width: 700px;
+		height: 600px;
+		margin: 20px auto;
+		position: relative;
+	}
+	.table .card{
+		width: 90px;
+		height: 130px;
+		background-size: 100%;
+		position: absolute;
+		top: 0;
+		left: 300px;
+	}
+	.table .card.active{
+		/*border: 5px solid #f40;*/
+		box-shadow: 0 0 0 5px rgba(12,173,226,0.9);
+	}	
+	.table .moveRight,.table .moveLeft{
+		padding: 20px 50px;
+		color: #fff;
+		border-radius: 5px;
+		position: absolute;
+		left: 300px;
+		cursor: pointer;
+	}
+	.table .moveRight{
+		bottom: 100px;
+		background-color: #f40;
+	}
+	.table .moveLeft{
+		bottom: 30px;
+		background-color: #f40;
+	}
+	
+</style>
+<body>
+	<div class="table">
+		<div class="moveRight">moveR</div>
+		<div class="moveLeft">moveL</div>
+	</div>
+	
+</body>
+</html>
+<script src="jquery.min.js"></script>
+<script src="poker.js"></script>
